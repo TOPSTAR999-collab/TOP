@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://topstar999-collab.github.io/TOP/sitemap.xml
