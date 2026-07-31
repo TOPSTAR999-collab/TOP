@@ -198,6 +198,44 @@ body{
 }
 
 /* =========================
+   PENGUMUMAN
+========================= */
+
+.announcement{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffd700;
+    color:#000;
+    overflow:hidden;
+    z-index:1000;
+    padding:10px 0;
+    font-weight:bold;
+    border-bottom:2px solid #ff9800;
+}
+
+.announcement-track{
+    white-space:nowrap;
+    display:inline-block;
+    padding-left:100%;
+    animation:announcementMove 18s linear infinite;
+}
+
+@keyframes announcementMove{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+
+.menu{
+    top:70px;
+}
+
+/* =========================
    SERING MENANG (PALING BAWAH)
 ========================= */
 .comments-win{
@@ -226,7 +264,14 @@ body{
 </head>
 
 <body>
+<div class="announcement">
+    <div class="announcement-track">
+         📢 Pengumuman: Banyak event menarik, ayo tunggu apa lagi. dapatkan keseruannya sekarang juga.
+    </div>
+</div>
+
 <!-- LOGO -->
+
 <div class="logo">
   <a href="https://topstar999-tri.store/">
      <img src="https://i.postimg.cc/zGgwRMfw/BCO-0b16d4e1-0b29-4a80-ad9d-73be9e557b20.png"
